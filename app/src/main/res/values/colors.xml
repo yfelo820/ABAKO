@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0099cb</color>
+    <color name="colorPrimaryDark">#62e5c3</color>
+    <color name="colorAccent">#a9adc8</color>
+
+    <color name="colorPrimary2">#cc0001</color>
+    <color name="colorPrimaryDark2">#fbd280</color>
+    <color name="other">#ed5e5f</color>
+    <color name="colorAccent2">#62e5c3</color>
+
+    <color name="strongBlue">#3f48cc</color>
+    <color name="strongGreen">#ff669900</color>
+
+    <color name="no_leida">#dddde3</color>
+    <color name="leida">#ffffff</color>
+    <color name="black">#000000</color>
+</resources>

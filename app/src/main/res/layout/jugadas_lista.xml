@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+       <TextView
+           android:layout_width="0dp"
+           android:layout_weight = "1"
+           android:layout_height="wrap_content"
+           android:text="26-05-2021"
+           android:textStyle="bold"
+           android:textSize="40dp"
+           android:layout_gravity="center"
+           android:textAlignment="center"
+           android:textColor="#000000"
+           android:id="@+id/txtFecha"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AM"
+            android:textStyle="bold"
+            android:textSize="65px"
+            android:layout_gravity="center"
+            android:id="@+id/txtAMPM"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50px">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="   LISTA    "
+            android:textStyle="bold"
+            android:textSize="65px"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/txtLista"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LIMPIO"
+            android:textStyle="bold"
+            android:textSize="65px"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/txtLimpio"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="    PREMIO    "
+            android:textStyle="bold"
+            android:textSize="65px"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/txtPremio"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GANA"
+            android:textStyle="bold"
+            android:textSize="65px"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:id="@+id/txtGana"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="400sp"
+            android:id="@+id/txtContenido"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="20px">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight = "1"
+            android:layout_height="wrap_content"
+            android:text="Ant"
+            android:id="@+id/btnAnt"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight = "1"
+            android:layout_height="wrap_content"
+            android:text="Sgt"
+            android:id="@+id/btnSgt"/>
+
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--<item android:title="Item"
+        android:id="@+id/eliminar"
+        android:icon="@drawable/ic_baseline_delete_24"
+        app:showAsAction="always"/>-->
+
+    <item android:title="Item"
+        android:id="@+id/search_by_date"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:showAsAction="always"/>
+
+    <!--<item android:title="Mostrar todas"
+        android:id="@+id/mostrar_todas"
+       app:showAsAction="never" />
+
+    <item android:title="Mostrar leidas"
+        android:id="@+id/mostrar_leidas"
+        app:showAsAction="never" />
+
+    <item android:title="Mostrar no leidas"
+        android:id="@+id/mostrar_no_leidas"
+        app:showAsAction="never" />-->
+</menu>

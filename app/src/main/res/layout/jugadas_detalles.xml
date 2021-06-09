@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight = "1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBola"
+            android:text="BOLA"
+            android:textSize="40px"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight = "1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnParlet"
+            android:text="PARLET"
+            android:textSize="40px"
+            android:layout_margin="5dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight = "1"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCentena"
+            android:text="CENTENA"
+            android:textSize="40px"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1000px"
+        android:orientation="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtContenido"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#808080">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight = "1"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="75px"
+                android:text="LIMPIO:"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight = "1"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="55px"
+                android:text="109911.85"
+                android:id="@+id/txtSaldoLimpio"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight = "1"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="75px"
+                android:text="BRUTO:"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight = "1"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="55px"
+                android:text="109911.85"
+                android:id="@+id/txtSaldoBruto"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

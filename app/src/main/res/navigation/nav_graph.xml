@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.abako_bank.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_premiosFragment"
+            app:destination="@id/premiosFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_jugadasLista2"
+            app:destination="@id/jugadasLista" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.abako_bank.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configPagosFragment"
+        android:name="com.example.abako_bank.ConfigPorcentPagosFragment"
+        android:label="fragment_config_pagos"
+        tools:layout="@layout/fragment_config_porcent_pagos" >
+        <action
+            android:id="@+id/action_configPagosFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configFragment"
+        android:name="com.example.abako_bank.ConfigFragment"
+        android:label="config_fragment"
+        tools:layout="@layout/config_fragment" >
+        <action
+            android:id="@+id/action_configFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_configPagosFragment"
+            app:destination="@id/configPagosFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_configPagosFragment2"
+            app:destination="@id/configPagosFragment2" />
+        <action
+            android:id="@+id/action_configFragment_to_configPagosLimFragment"
+            app:destination="@id/configPagosLimFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_configHDiaFragment"
+            app:destination="@id/configHDiaFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_configHNocheFragment"
+            app:destination="@id/configHNocheFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_configLimFragment"
+            app:destination="@id/configLimFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_userPassFragment"
+            app:destination="@id/userPassFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_configLetraFragment"
+            app:destination="@id/configLetraFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_diasInactivoFragment"
+            app:destination="@id/diasInactivoFragment" />
+        <action
+            android:id="@+id/action_configFragment_to_configLetraListeroFragment"
+            app:destination="@id/configLetraListeroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configPagosFragment2"
+        android:name="com.example.abako_bank.ConfigPagosFragment"
+        android:label="config_pagos_fragment"
+        tools:layout="@layout/config_pagos_fragment" >
+        <action
+            android:id="@+id/action_configPagosFragment2_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configPagosLimFragment"
+        android:name="com.example.abako_bank.ConfigPagosLimFragment"
+        android:label="fragment_config_pagos_lim"
+        tools:layout="@layout/fragment_config_pagos_lim" >
+        <action
+            android:id="@+id/action_configPagosLimFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configHDiaFragment"
+        android:name="com.example.abako_bank.ConfigHDiaFragment"
+        android:label="fragment_config_h_dia"
+        tools:layout="@layout/fragment_config_h_dia" >
+        <action
+            android:id="@+id/action_configHDiaFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configHNocheFragment"
+        android:name="com.example.abako_bank.ConfigHNocheFragment"
+        android:label="fragment_config_h_noche"
+        tools:layout="@layout/fragment_config_h_noche" >
+        <action
+            android:id="@+id/action_configHNocheFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configLimFragment"
+        android:name="com.example.abako_bank.ConfigLimFragment"
+        android:label="fragment_config_lim"
+        tools:layout="@layout/fragment_config_lim" >
+        <action
+            android:id="@+id/action_configLimFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userPassFragment"
+        android:name="com.example.abako_bank.UserPassFragment"
+        android:label="fragment_user_pass"
+        tools:layout="@layout/fragment_user_pass" >
+        <action
+            android:id="@+id/action_userPassFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configLetraFragment"
+        android:name="com.example.abako_bank.ConfigLetraFragment"
+        android:label="ConfigLetraFragment" >
+        <action
+            android:id="@+id/action_configLetraFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/diasInactivoFragment"
+        android:name="com.example.abako_bank.DiasInactivoFragment"
+        android:label="DiasInactivoFragment" >
+        <action
+            android:id="@+id/action_diasInactivoFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/configLetraListeroFragment"
+        android:name="com.example.abako_bank.ConfigLetraListeroFragment"
+        android:label="fragment_config_letra_listero"
+        tools:layout="@layout/fragment_config_letra_listero" >
+        <action
+            android:id="@+id/action_configLetraListeroFragment_to_configFragment"
+            app:destination="@id/configFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/premiosFragment"
+        android:name="com.example.abako_bank.PremiosFragment"
+        android:label="fragment_premios"
+        tools:layout="@layout/fragment_premios" >
+        <action
+            android:id="@+id/action_premiosFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_premiosFragment_to_prizesColectorFragment"
+            app:destination="@id/prizesColectorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/prizesColectorFragment"
+        android:name="com.example.abako_bank.PrizesColectorFragment"
+        android:label="fragment_prizes_colector"
+        tools:layout="@layout/fragment_prizes_colector" >
+        <action
+            android:id="@+id/action_prizesColectorFragment_to_premiosFragment"
+            app:destination="@id/premiosFragment" />
+        <action
+            android:id="@+id/action_prizesColectorFragment_to_listasFragment"
+            app:destination="@id/listasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listasFragment"
+        android:name="com.example.abako_bank.ListasFragment"
+        android:label="fragment_listas"
+        tools:layout="@layout/fragment_listas" >
+        <action
+            android:id="@+id/action_listasFragment_to_prizesColectorFragment"
+            app:destination="@id/prizesColectorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jugadasLista"
+        android:name="com.example.abako_bank.JugadasLista"
+        android:label="JugadasLista" >
+        <action
+            android:id="@+id/action_jugadasLista_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+</navigation>

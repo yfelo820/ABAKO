@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:weightSum="1"
+    android:id="@+id/fila"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_weight="0.9"
+        android:id="@+id/numero"
+        android:layout_margin="5dp"
+        android:textColor="@android:color/black"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:layout_gravity="right"
+        android:gravity="right">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            android:id="@+id/delete"
+            android:layout_gravity="right"
+            android:src="@drawable/ic_baseline_delete_24_2"></ImageView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

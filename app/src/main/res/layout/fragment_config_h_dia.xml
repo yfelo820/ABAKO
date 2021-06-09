@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfigHDiaFragment" android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_orange_light">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="INACTIVO DÍA"
+
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hora"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content" android:id="@+id/hora_dia_inactivo"></EditText>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Minuto"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content" android:id="@+id/minuto_dia_inactivo"></EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp"
+                android:background="@android:color/holo_red_dark">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ACTIVO DÍA"
+
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Hora"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content" android:id="@+id/hora_dia_activo"></EditText>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/black"
+                    android:textSize="17dp"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_margin="5dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content" android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Minuto"
+                        android:gravity="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"></TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:textSize="17dp"
+                        android:layout_height="wrap_content" android:id="@+id/minuto_dia_activo"></EditText>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+</LinearLayout>
